@@ -29,3 +29,17 @@ $ source .bashrc -> 변경내용 바로 적용
 $ find /usr -name '*cudnn_version*' -> cuDNN 버전확인
 
 cudnn_version.h을 찾아서 define문에서 정의한 3개 기호상수(CUDNN_MAJOR, MINOR, PATCHLEVEL)가 버전 x.x.x을 의미함
+
+## jetson-stats 설치 -> 실시간 시스템정보 모니터링
+
+$ sudo apt-get install python3 -> 파이썬3 먼저설치
+
+$ sudo apt-get install python3-pip -> pip3 먼저설치
+
+$ sudo -H pip3 install -U jetson-stats
+
+$ reboot  -> 설치후 리부팅해야함
+
+$ jtop -> jetson 보드정보 실시간 모니터링, 윈도우즈의 작업관리자랑 같음
+
+$ jetson_release -> Jetpack 정보 보기
