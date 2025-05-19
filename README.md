@@ -23,3 +23,9 @@ export PATH=/usr/local/cuda-xx.x/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-xx.x/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 $ source .bashrc -> 변경내용 바로 적용
+
+Jetson보드의 리눅스에서 cudnn 버전확인
+
+$ find /usr -name '*cudnn_version*' -> cuDNN 버전확인
+
+cudnn_version.h을 찾아서 define문에서 정의한 3개 기호상수(CUDNN_MAJOR, MINOR, PATCHLEVEL)가 버전 x.x.x을 의미함
