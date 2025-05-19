@@ -1,6 +1,6 @@
 # jetsoninstall
 
-Jetson 보드 리눅스에서 설치확인 
+## Jetson 보드 리눅스에서 설치확인 
 
 $ nvcc --version 또는
 
@@ -24,7 +24,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-xx.x/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 
 $ source .bashrc -> 변경내용 바로 적용
 
-Jetson보드의 리눅스에서 cudnn 버전확인
+## Jetson보드의 리눅스에서 cudnn 버전확인
 
 $ find /usr -name '*cudnn_version*' -> cuDNN 버전확인
 
